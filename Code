@@ -1,1 +1,35 @@
+/*
+ * CS312 Assignment 7.
+ /**
+  * @authors: Student 1: Viviana Martinez
+  *           Student 2: Haoqing Geng
+  *
+  *  On <OUR> honor, <Vivivana> and <Haoqing>, this programming assignment is <OUR> own work
+  *  and <WE> have not provided this code to any other student.
+  *
+  * Group name on Canvas: Assignment 7 Group <NUMBER>
+  * Student 1: Viviana Martinez
+  *  email address: violetviviana@gmail.com
+  *  Section 5 digit ID: 51710
+  *  UTEID: vcm362
+  *  Number of slip days used on this assignment: Zero
+  *
+  * Student 2: Haoqing Geng
+  *  email address: hqgeng@cs.utexas.edu
+  *  Section 5 digit ID: 51710
+  *  UTEID: hg7597
+  *  Number of slip days used on this assignment: 0
+  *
+  * A program to do simple word processing on a text document.
+ */
 
+// Add import statements here.
+import java.io.*;
+import java.util.*;
+
+public class WordProcessor{
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner console = new Scanner (System.in);
+		Scanner input = new Scanner(new File(".txt"));
+	}
+}
