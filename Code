@@ -30,6 +30,21 @@ import java.util.*;
 public class WordProcessor{
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner console = new Scanner (System.in);
-	
-	}
+	public class WordProcessor{
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner console = new Scanner (System.in);
+        System.out.print ("Enter name of file to be processed, including the .txt extension: ");
+        String filename = console.nextLine();
+        Scanner input = new Scanner(new File(filename)); 
+    }
+
+    public static void consoleOutput (boolean passedTest) {
+        if (passedTest){
+            System.out.print ("The maximum output file line length is CORRECT.");
+        }
+        else {
+            System.out.print ("The maximum output file line length is INCORRECT!!!");
+        }
+    }
+
 }
