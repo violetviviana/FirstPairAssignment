@@ -7,7 +7,7 @@
   *  On <OUR> honor, <Vivivana> and <Haoqing>, this programming assignment is <OUR> own work
   *  and <WE> have not provided this code to any other student.
   *
-  * Group name on Canvas: Assignment 7 Group <7>
+  * Group name on Canvas: Assignment 7 Group <NUMBER>
   * Student 1: Viviana Martinez
   *  email address: violetviviana@gmail.com
   *  Section 5 digit ID: 51710
@@ -30,6 +30,18 @@ import java.util.*;
 public class WordProcessor{
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner console = new Scanner (System.in);
-	
+		Scanner input = new Scanner(new File(".txt"));
 	}
+	
+    public static void consoleOutput (boolean passedTest) {
+        System.out.print ("Enter name of file to be processed, including the .txt extension: ");
+        if (passedTest){
+            System.out.print ("The maximum output file line length is CORRECT.");
+        }
+        else {
+            System.out.print ("The maximum output file line length is INCORRECT!!!");
+        }
+    }
+	
+	
 }
