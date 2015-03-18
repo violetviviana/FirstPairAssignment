@@ -32,7 +32,16 @@ public class WordProcessor{
         Scanner console = new Scanner (System.in);
         System.out.print ("Enter name of file to be processed, including the .txt extension: ");
         String filename = console.nextLine();
-        Scanner input = new Scanner(new File(filename)); 
+        Scanner input = new Scanner(new File(filename)); while (input.hasNextLine()) {
+            String line = input.nextLine();
+            int width = getWidth(line);
+           } 
+    }
+
+    public static int getWidth(String line) {
+        Scanner findWidth = new Scanner(line);
+        int width = findWidth.nextInt();
+        return width;
     }
 
     public static void consoleOutput (boolean passedTest) {
