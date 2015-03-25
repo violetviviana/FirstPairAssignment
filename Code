@@ -1,26 +1,25 @@
 /*
  * CS312 Assignment 7.
- /**
-  * @authors: Student 1: Viviana Martinez
-  *           Student 2: Haoqing Geng
-  *
-  *  On <OUR> honor, <Vivivana> and <Haoqing>, this programming assignment is <OUR> own work
-  *  and <WE> have not provided this code to any other student.
-  *
-  * Group name on Canvas: Assignment 7 Group <7>
-  * Student 1: Viviana Martinez
-  *  email address: violetviviana@gmail.com
-  *  Section 5 digit ID: 51710
-  *  UTEID: vcm362
-  *  Number of slip days used on this assignment: Zero
-  *
-  * Student 2: Haoqing Geng
-  *  email address: hqgeng@cs.utexas.edu
-  *  Section 5 digit ID: 51710
-  *  UTEID: hg7597
-  *  Number of slip days used on this assignment: 0
-  *
-  * A program to do simple word processing on a text document.
+/**
+ * @authors: Student 1:
+ *           Student 2:
+ *
+ *  On <MY|OUR> honor, <NAME1> and <NAME2), this programming assignment is <MY|OUR> own work
+ *  and <I|WE> have not provided this code to any other student.
+ *
+ * Group name on Canvas: Assignment 7 Group <NUMBER>
+ * Student 1: 
+ *  email address:
+ *  Section 5 digit ID:
+ *  UTEID:
+ *  Number of slip days used on this assignment:
+ *
+ * Student 2:
+ *  email address:
+ *  Section 5 digit ID:
+ *  UTEID:
+ *
+ * A program to do simple word processing on a text document.
  */
 
 // Add import statements here.
@@ -31,12 +30,29 @@ public class WordProcessor{
     public static void main(String[] args) throws FileNotFoundException {
         Scanner console = new Scanner (System.in);
         System.out.print ("Enter name of file to be processed, including the .txt extension: ");
-        String filename = console.nextLine();
+        String fileName = console.nextLine();
+        String newFileName = fileName
         Scanner input = new Scanner(new File(filename)); 
+        PrintStream out = new PrintStream(new File(replace(fileName, + "_OUT.txt"));
         while (input.hasNextLine()) {
             String line = input.nextLine();
-            int width = getWidth(line);
+            int width = input.nextInt(); 
+            showWidth (width);
         } 
+    }
+    
+    public static void showWidth (int width) {
+        for (int i = 1; i <= width; i++) {
+            System.out.print (i/10);
+        }
+        System.out.println();
+        for (int i = 1; i <= width; i++) {
+            System.out.print (i%10);
+        }
+        System.out.println();
+        for (int i = 1; i<= width; i++) {
+            System.out.print ("-");
+        }
     }
 
     public static int getWidth(String line) {
@@ -54,3 +70,4 @@ public class WordProcessor{
         }
     }
 }
+
